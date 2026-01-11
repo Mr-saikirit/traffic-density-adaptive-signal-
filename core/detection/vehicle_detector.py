@@ -5,7 +5,8 @@ class VehicleDetector:
     def __init__(self):
         # Load both models from the models/ directory
         self.traffic_model = YOLO('yolov8n.pt')
-        self.emergency_model = YOLO('models/emergency_best.pt')
+        self.emergency_model = YOLO('yolov8n.pt')
+
 
         if torch.cuda.is_available():
             self.traffic_model.to("cuda")
