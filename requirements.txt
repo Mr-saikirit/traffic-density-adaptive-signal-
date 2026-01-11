@@ -1,6 +1,8 @@
 streamlit==1.30.0
 opencv-python-headless==4.8.1.78
 ultralytics==8.0.235
-numpy
+torch==2.0.1
+torchvision==0.15.2
+numpy==1.26.4
 pandas
 Pillow
