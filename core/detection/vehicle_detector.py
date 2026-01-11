@@ -4,7 +4,7 @@ from ultralytics import YOLO
 class VehicleDetector:
     def __init__(self):
         # Load both models from the models/ directory
-        self.traffic_model = YOLO('models/yolov8n.pt')
+        self.traffic_model = YOLO('yolov8n.pt')
         self.emergency_model = YOLO('models/emergency_best.pt')
 
         if torch.cuda.is_available():
