@@ -207,10 +207,14 @@ with tab1:
                         2
                     )
 
+                
                 video_placeholder.image(
                     cv2.cvtColor(display_frame, cv2.COLOR_BGR2RGB),
-                    use_container_width=True
-                )
+                    use_column_width=True
+)
+
+                
+            
                 time.sleep(0.01)
 
             cap.release()
